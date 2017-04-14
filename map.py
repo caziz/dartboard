@@ -5,6 +5,9 @@ import collections
 import repoze.lru as functools
 import configKeys
 
+start = "Half Moon Bay High School"
+end = "530 Ferdinand Avenue, Half Moon Bay"
+
 BING_MAPS_KEY = configKeys.bms
 
 def gen_waypoint(loc):

@@ -4,7 +4,10 @@ from map import getImage, route, genMapLink
 import repoze.lru as functools
 import urllib
 
+#app = Flask(__name__)
 app = Flask(__name__, static_url_path = "", static_folder = "static")
+
+#app.add_url_rule('/favicon.ico', redirect_to=url_for('static', filename='favicon.ico'))
 
 # ensure responses aren't cached
 if app.config["DEBUG"]:
